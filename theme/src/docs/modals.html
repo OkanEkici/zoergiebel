@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("../partials/head.html", {"pageTitle": "Shopper"})
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    @@include("../partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("../partials/navbar-docs-top.html", {"classList": "border-bottom"})
+
+    <!-- CONTENT -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+
+          <!-- Navbar -->
+          @@include("../partials/navbar-docs-left.html", {"title": "Modals"})
+
+        </div>
+        <div class="col-12 col-md-8 col-lg-9 col-xl-10">
+          <section class="px-md-10 py-10">
+
+            <h3>Modals</h3>
+
+            <p class="text-gray-500">
+              Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content. <br>
+              <a href="http://getbootstrap.com/docs/4.1/components/modal/">Bootstrap documentation</a>
+            </p>
+
+            <div class="card">
+              <div class="card-body border">
+
+                <button class="btn btn-primary" data-toggle="modal" data-target="#modalProduct">
+                  Launch demo modal
+                </button>
+
+              </div>
+            </div>
+
+            <hr class="my-7">
+
+            <h5>Vertical</h5>
+
+            <p class="text-gray-500">
+              Creates a vertical variation of the modal component that acts as a layered sidebar. Can be used to display search results, notifications, and almost any other type of content.
+            </p>
+
+            <div class="card">
+              <div class="card-body border">
+
+                <button class="btn btn-secondary" data-toggle="modal" data-target="#modalSearch">
+                  Launch vertical modal
+                </button>
+
+              </div>
+              <div class="card-footer font-size-sm bg-dark">
+                <code class="highlight html">
+                  &lt;div&nbsp;class=&quot;modal&nbsp;fade&nbsp;fixed-right&quot;&nbsp;id=&quot;modalVerticalRight&quot;&nbsp;tabindex=&quot;-1&quot;&nbsp;role=&quot;dialog&quot;&nbsp;aria-hidden=&quot;true&quot;&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;modal-dialog&nbsp;modal-dialog-vertical&quot;&nbsp;role=&quot;document&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;modal-content&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    @@include("../partials/scripts.html")
+
+  </body>
+</html>

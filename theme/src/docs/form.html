@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("../partials/head.html", {"pageTitle": "Shopper"})
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    @@include("../partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("../partials/navbar-docs-top.html", {"classList": "border-bottom"})
+
+    <!-- CONTENT -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+
+          <!-- Navbar -->
+          @@include("../partials/navbar-docs-left.html", {"title": "Form "})
+
+        </div>
+        <div class="col-12 col-md-8 col-lg-9 col-xl-10">
+          <section class="px-md-10 py-10">
+
+            <h3>Form</h3>
+
+            <p class="text-gray-500">
+              Shopper supports all of Bootstrap's default form styling in addition to a handful of new input types and features. <br>
+              <a href="https://getbootstrap.com/docs/4.0/components/forms/">Bootstrap documentation</a>
+            </p>
+
+            <div class="card">
+              <div class="card-body border">
+
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+              </div>
+            </div>
+
+            <hr class="my-7">
+
+            <h5>Input group</h5>
+
+            <p class="text-gray-500">
+              Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.
+            </p>
+
+            <div class="card">
+              <div class="card-body border">
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">@example.com</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <hr class="my-7">
+
+            <h5>Sizing</h5>
+
+            <p class="text-gray-500">
+              Set heights using classes like .form-control-lg and .form-control-sm.
+            </p>
+
+            <div class="card">
+              <div class="card-body border">
+
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" placeholder=".form-control-lg">
+                </div>
+
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder=".form-control">
+                </div>
+
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-sm" placeholder=".form-control-sm">
+                </div>
+
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-xs" placeholder=".form-control-xs">
+                </div>
+
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-xxs" placeholder=".form-control-xxs">
+                </div>
+
+              </div>
+              <div class="card-footer font-size-sm bg-dark">
+                <code class="highlight html">
+                  &lt;div&nbsp;class=&quot;form-group&quot;&gt;<br />&nbsp;&nbsp;&lt;input&nbsp;type=&quot;text&quot;&nbsp;class=&quot;form-control&nbsp;form-control-lg&quot;&nbsp;placeholder=&quot;.form-control-lg&quot;&gt;<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;form-group&quot;&gt;<br />&nbsp;&nbsp;&lt;input&nbsp;type=&quot;text&quot;&nbsp;class=&quot;form-control&quot;&nbsp;placeholder=&quot;.form-control&quot;&gt;<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;form-group&quot;&gt;<br />&nbsp;&nbsp;&lt;input&nbsp;type=&quot;text&quot;&nbsp;class=&quot;form-control&nbsp;form-control-sm&quot;&nbsp;placeholder=&quot;.form-control-sm&quot;&gt;<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;form-group&quot;&gt;<br />&nbsp;&nbsp;&lt;input&nbsp;type=&quot;text&quot;&nbsp;class=&quot;form-control&nbsp;form-control-xs&quot;&nbsp;placeholder=&quot;.form-control-xs&quot;&gt;<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;form-group&quot;&gt;<br />&nbsp;&nbsp;&lt;input&nbsp;type=&quot;text&quot;&nbsp;class=&quot;form-control&nbsp;form-control-xxs&quot;&nbsp;placeholder=&quot;.form-control-xxs&quot;&gt;<br />&lt;/div&gt;<br />
+                </code>
+              </div>
+            </div>
+
+            <hr class="my-7">
+
+            <h5>Underline</h5>
+
+            <p class="text-gray-500">
+              Removes top, right, and left borders of a <code>.form-control</code>.
+            </p>
+
+            <div class="card">
+              <div class="card-body border">
+
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-underline" placeholder=".form-control-underline">
+                </div>
+
+              </div>
+              <div class="card-footer font-size-sm bg-dark">
+                <code class="highlight html">
+                  &lt;div&nbsp;class=&quot;form-group&quot;&gt;<br />&nbsp;&nbsp;&lt;input&nbsp;type=&quot;text&quot;&nbsp;class=&quot;form-control&nbsp;form-control-underline&quot;&nbsp;placeholder=&quot;.form-control-underline&quot;&gt;<br />&lt;/div&gt;<br />
+                </code>
+              </div>
+            </div>
+
+            <hr class="my-7">
+
+            <h5>Input group merge</h5>
+
+            <p class="text-gray-500">
+              A slightly modified version of the default input groups that always keeps icons as a part of the form control.
+            </p>
+
+            <div class="card">
+              <div class="card-body border">
+
+                <div class="input-group input-group-merge">
+                  <input class="form-control" type="search" placeholder="Search">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-border" type="submit">
+                      <i class="fe fe-search"></i>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+              <div class="card-footer font-size-sm bg-dark">
+                <code class="highlight html">
+                  &lt;div&nbsp;class=&quot;input-group&nbsp;input-group-merge&quot;&gt;<br />&nbsp;&nbsp;&lt;input&nbsp;class=&quot;form-control&quot;&nbsp;type=&quot;search&quot;&nbsp;placeholder=&quot;Search&quot;&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;input-group-append&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn-outline-border&quot;&nbsp;type=&quot;submit&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i&nbsp;class=&quot;fe&nbsp;fe-search&quot;&gt;&lt;/i&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;<br />&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;<br />
+                </code>
+              </div>
+            </div>
+
+            <hr class="my-7">
+
+            <h5>Custom forms</h5>
+
+            <p class="text-gray-500">
+              For even more customization and cross browser consistency, use our completely custom form elements to replace the browser defaults. They’re built on top of semantic and accessible markup, so they’re solid replacements for any default form control.
+            </p>
+
+            <div class="card">
+              <div class="card-body border">
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                </div>
+
+              </div>
+              <div class="card-footer font-size-sm bg-dark">
+                <code class="highlight html">
+                  &lt;div&nbsp;class=&quot;custom-control&nbsp;custom-checkbox&quot;&gt;<br />&nbsp;&nbsp;&lt;input&nbsp;type=&quot;checkbox&quot;&nbsp;class=&quot;custom-control-input&quot;&nbsp;id=&quot;customCheck1&quot;&gt;<br />&nbsp;&nbsp;&lt;label&nbsp;class=&quot;custom-control-label&quot;&nbsp;for=&quot;customCheck1&quot;&gt;Check&nbsp;this&nbsp;custom&nbsp;checkbox&lt;/label&gt;<br />&lt;/div&gt;<br />
+                </code>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="card">
+              <div class="card-body border">
+
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                </div>
+
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+                </div>
+
+              </div>
+              <div class="card-footer font-size-sm bg-dark">
+                <code class="highlight html">
+                  &lt;div&nbsp;class=&quot;custom-control&nbsp;custom-radio&quot;&gt;<br />&nbsp;&nbsp;&lt;input&nbsp;type=&quot;radio&quot;&nbsp;id=&quot;customRadio1&quot;&nbsp;name=&quot;customRadio&quot;&nbsp;class=&quot;custom-control-input&quot;&gt;<br />&nbsp;&nbsp;&lt;label&nbsp;class=&quot;custom-control-label&quot;&nbsp;for=&quot;customRadio1&quot;&gt;Toggle&nbsp;this&nbsp;custom&nbsp;radio&lt;/label&gt;<br />&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;custom-control&nbsp;custom-radio&quot;&gt;<br />&nbsp;&nbsp;&lt;input&nbsp;type=&quot;radio&quot;&nbsp;id=&quot;customRadio2&quot;&nbsp;name=&quot;customRadio&quot;&nbsp;class=&quot;custom-control-input&quot;&gt;<br />&nbsp;&nbsp;&lt;label&nbsp;class=&quot;custom-control-label&quot;&nbsp;for=&quot;customRadio2&quot;&gt;Or&nbsp;toggle&nbsp;this&nbsp;other&nbsp;custom&nbsp;radio&lt;/label&gt;<br />&lt;/div&gt;<br />
+                </code>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="card">
+              <div class="card-body border">
+
+                <select class="custom-select">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+
+              </div>
+              <div class="card-footer font-size-sm bg-dark">
+                <code class="highlight html">
+                  &lt;select&nbsp;class=&quot;custom-select&quot;&gt;<br />&nbsp;&nbsp;&lt;option&nbsp;selected&gt;Open&nbsp;this&nbsp;select&nbsp;menu&lt;/option&gt;<br />&nbsp;&nbsp;&lt;option&nbsp;value=&quot;1&quot;&gt;One&lt;/option&gt;<br />&nbsp;&nbsp;&lt;option&nbsp;value=&quot;2&quot;&gt;Two&lt;/option&gt;<br />&nbsp;&nbsp;&lt;option&nbsp;value=&quot;3&quot;&gt;Three&lt;/option&gt;<br />&lt;/select&gt;<br />
+                </code>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="card">
+              <div class="card-body border">
+
+                <div class="custom-control custom-control-color">
+                  <input type="checkbox" class="custom-control-input" id="customColor1">
+                  <label class="custom-control-label" for="customColor1" style="color: red;">
+                    <span class="text-gray-450">Custom color checkbox / radio</span>
+                  </label>
+                </div>
+
+              </div>
+              <div class="card-footer font-size-sm bg-dark">
+                <code class="highlight html">
+                  &lt;div&nbsp;class=&quot;custom-control&nbsp;custom-control-color&quot;&gt;<br />&nbsp;&nbsp;&lt;input&nbsp;type=&quot;checkbox&quot;&nbsp;class=&quot;custom-control-input&quot;&nbsp;id=&quot;customColor1&quot;&gt;<br />&nbsp;&nbsp;&lt;label&nbsp;class=&quot;custom-control-label&quot;&nbsp;for=&quot;customColor1&quot;&nbsp;style=&quot;color:&nbsp;red;&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;text-gray-450&quot;&gt;Custom&nbsp;color&nbsp;checkbox&nbsp;/&nbsp;radio&lt;/span&gt;<br />&nbsp;&nbsp;&lt;/label&gt;<br />&lt;/div&gt;<br />
+                </code>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="card">
+              <div class="card-body border">
+
+                <div class="custom-control custom-control-text">
+                  <input type="checkbox" class="custom-control-input" id="customText1">
+                  <label class="custom-control-label" for="customText1">
+                    Custom text checkbox / radio
+                  </label>
+                </div>
+
+              </div>
+              <div class="card-footer font-size-sm bg-dark">
+                <code class="highlight html">
+                  &lt;div&nbsp;class=&quot;custom-control&nbsp;custom-control-text&quot;&gt;<br />&nbsp;&nbsp;&lt;input&nbsp;type=&quot;checkbox&quot;&nbsp;class=&quot;custom-control-input&quot;&nbsp;id=&quot;customText1&quot;&gt;<br />&nbsp;&nbsp;&lt;label&nbsp;class=&quot;custom-control-label&quot;&nbsp;for=&quot;customText1&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;Custom&nbsp;text&nbsp;checkbox&nbsp;/&nbsp;radio<br />&nbsp;&nbsp;&lt;/label&gt;<br />&lt;/div&gt;<br />
+                </code>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="card">
+              <div class="card-body border">
+
+                <div class="custom-control custom-control-img">
+                  <input type="checkbox" class="custom-control-input" id="customImage1">
+                  <label class="custom-control-label" for="customImage1">
+                    <span class="embed-responsive embed-responsive-1by1 bg-cover" style="background-image: url(@@webRoot/assets/img/products/product-7.jpg);"></span>
+                  </label>
+                </div>
+
+              </div>
+              <div class="card-footer font-size-sm bg-dark">
+                <code class="highlight html">
+                  &lt;div&nbsp;class=&quot;custom-control&nbsp;custom-control-img&quot;&gt;<br />&nbsp;&nbsp;&lt;input&nbsp;type=&quot;checkbox&quot;&nbsp;class=&quot;custom-control-input&quot;&nbsp;id=&quot;customImage1&quot;&gt;<br />&nbsp;&nbsp;&lt;label&nbsp;class=&quot;custom-control-label&quot;&nbsp;for=&quot;customImage1&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;embed-responsive&nbsp;embed-responsive-1by1&nbsp;bg-cover&quot;&nbsp;style=&quot;background-image:&nbsp;url(@@webRoot/assets/img/products/product-7.jpg);&quot;&gt;&lt;/span&gt;<br />&nbsp;&nbsp;&lt;/label&gt;<br />&lt;/div&gt;<br />
+                </code>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="card">
+              <div class="card-body border">
+
+                <div class="custom-control custom-control-size">
+                  <input type="checkbox" class="custom-control-input" id="customSize1">
+                  <label class="custom-control-label" for="customSize1">XXS</label>
+                </div>
+
+              </div>
+              <div class="card-footer font-size-sm bg-dark">
+                <code class="highlight html">
+                  &lt;div&nbsp;class=&quot;custom-control&nbsp;custom-control-size&quot;&gt;<br />&nbsp;&nbsp;&lt;input&nbsp;type=&quot;checkbox&quot;&nbsp;class=&quot;custom-control-input&quot;&nbsp;id=&quot;customSize1&quot;&gt;<br />&nbsp;&nbsp;&lt;label&nbsp;class=&quot;custom-control-label&quot;&nbsp;for=&quot;customSize1&quot;&gt;XXS&lt;/label&gt;<br />&lt;/div&gt;<br />
+                </code>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="card">
+              <div class="card-body border">
+
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                  <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+                </div>
+
+              </div>
+              <div class="card-footer font-size-sm bg-dark">
+                <code class="highlight html">
+                  &lt;div&nbsp;class=&quot;custom-control&nbsp;custom-switch&quot;&gt;<br />&nbsp;&nbsp;&lt;input&nbsp;type=&quot;checkbox&quot;&nbsp;class=&quot;custom-control-input&quot;&nbsp;id=&quot;customSwitch1&quot;&gt;<br />&nbsp;&nbsp;&lt;label&nbsp;class=&quot;custom-control-label&quot;&nbsp;for=&quot;customSwitch1&quot;&gt;Toggle&nbsp;this&nbsp;switch&nbsp;element&lt;/label&gt;<br />&lt;/div&gt;<br />
+                </code>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    @@include("../partials/scripts.html")
+
+  </body>
+</html>

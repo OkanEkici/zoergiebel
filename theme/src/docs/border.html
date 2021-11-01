@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("../partials/head.html", {"pageTitle": "Shopper"})
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    @@include("../partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("../partials/navbar-docs-top.html", {"classList": "border-bottom"})
+
+    <!-- CONTENT -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+
+          <!-- Navbar -->
+          @@include("../partials/navbar-docs-left.html", {"title": "Border"})
+
+        </div>
+        <div class="col-12 col-md-8 col-lg-9 col-xl-10">
+          <section class="px-md-10 py-10">
+
+            <h3>Border</h3>
+
+            <p class="text-gray-500">
+              Border utilities to easily change border color and width, as well as make them responsive. <br>
+              <a href="https://getbootstrap.com/docs/4.4/utilities/borders/" target="_blank">Bootstrap documentation</a>
+            </p>
+
+            <hr class="my-7">
+
+            <h5>Responsive</h5>
+
+            <ul>
+              <li>
+                <code>.border-{breakpoint}, .border-top-{breakpoint}, .border-right-{breakpoint}, .border-bottom-{breakpoint}, .border-left-{breakpoint}</code> - adds a border at the specified and subsequent breakpoints.
+              </li>
+              <li>
+                <code>.border-{breakpoint}-0, .border-top-{breakpoint}-0, .border-right-{breakpoint}-0, .border-bottom-{breakpoint}-0, .border-left-{breakpoint}-0</code> - removes a border at the specified and subsequent breakpoints.
+              </li>
+            </ul>
+
+            <hr class="my-7">
+
+            <h5>Colors</h5>
+
+            <ul>
+              <li>
+                <code>.border-gray-700</code> - changes the border color to <code>$gray-700</code>.
+              </li>
+            </ul>
+
+            <hr class="my-7">
+
+            <h5>Width</h5>
+
+            <ul>
+              <li>
+                <code>.border-2</code> - doubles the default border width.
+              </li>
+            </ul>
+
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    @@include("../partials/scripts.html")
+
+  </body>
+</html>

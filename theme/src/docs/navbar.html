@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("../partials/head.html", {"pageTitle": "Shopper"})
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    @@include("../partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("../partials/navbar-docs-top.html", {"classList": "border-bottom"})
+
+    <!-- CONTENT -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+
+          <!-- Navbar -->
+          @@include("../partials/navbar-docs-left.html", {"title": "Navbar"})
+
+        </div>
+        <div class="col-12 col-md-8 col-lg-9 col-xl-10">
+          <section class="px-md-10 py-10">
+
+            <h3>Navbar</h3>
+
+            <p class="text-gray-500">
+              Powerful and responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for the collapse plugin. <br>
+              <a href="http://getbootstrap.com/docs/4.1/components/navbar/">Bootstrap documentation</a>
+            </p>
+
+            <p class="text-gray-500">
+              Shopper comes with multiple navbar combinations and layout options including vertical variation of the navbar component. Please see corresponding partials in <code>src/partials/</code> for code samples.
+            </p>
+
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    @@include("../partials/scripts.html")
+
+  </body>
+</html>

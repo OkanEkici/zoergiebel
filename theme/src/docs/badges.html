@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("../partials/head.html", {"pageTitle": "Shopper"})
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    @@include("../partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("../partials/navbar-docs-top.html", {"classList": "border-bottom"})
+
+    <!-- CONTENT -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+
+          <!-- Navbar -->
+          @@include("../partials/navbar-docs-left.html", {"title": "Badges"})
+
+        </div>
+        <div class="col-12 col-md-8 col-lg-9 col-xl-10">
+          <section class="px-md-10 py-10">
+
+            <h3>Badges</h3>
+
+            <p class="text-gray-500">
+              A small count and labeling component. <br>
+              <a href="https://getbootstrap.com/docs/4.0/components/badge/" target="_blank">Bootstrap documentation</a>
+            </p>
+
+            <div class="card">
+              <div class="card-body border">
+
+                <span class="badge badge-primary">Primary</span>
+                <span class="badge badge-secondary">Secondary</span>
+                <span class="badge badge-success">Success</span>
+                <span class="badge badge-danger">Danger</span>
+                <span class="badge badge-warning">Warning</span>
+                <span class="badge badge-info">Info</span>
+                <span class="badge badge-light">Light</span>
+                <span class="badge badge-dark">Dark</span>
+                <span class="badge badge-white">White</span>
+
+              </div>
+            </div>
+
+            <hr class="my-7">
+
+            <h5>Links</h5>
+
+            <p class="text-gray-500">
+              Using the contextual <code>.badge-*</code> classes on an <code>&lt;a&gt;</code> element quickly provide actionable badges with hover and focus states.
+            </p>
+
+            <div class="card">
+              <div class="card-body border">
+
+                <a class="badge badge-primary" href="#!">Primary</a>
+                <a class="badge badge-secondary" href="#!">Secondary</a>
+                <a class="badge badge-success" href="#!">Success</a>
+                <a class="badge badge-danger" href="#!">Danger</a>
+                <a class="badge badge-warning" href="#!">Warning</a>
+                <a class="badge badge-info" href="#!">Info</a>
+                <a class="badge badge-light" href="#!">Light</a>
+                <a class="badge badge-dark" href="#!">Dark</a>
+                <a class="badge badge-white" href="#!">White</a>
+
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    @@include("../partials/scripts.html")
+
+  </body>
+</html>

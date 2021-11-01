@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("../partials/head.html", {"pageTitle": "Shopper"})
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    @@include("../partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("../partials/navbar-docs-top.html", {"classList": "border-bottom"})
+
+    <!-- CONTENT -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+
+          <!-- Navbar -->
+          @@include("../partials/navbar-docs-left.html", {"title": "Toasts"})
+
+        </div>
+        <div class="col-12 col-md-8 col-lg-9 col-xl-10">
+          <section class="px-md-10 py-10">
+
+            <h3>Toasts</h3>
+
+            <p class="text-gray-500">
+              Push notifications to your visitors with a toast, a lightweight and easily customizable alert message. <br>
+              <a href="https://getbootstrap.com/docs/4.2/components/toasts/" target="_blank">Bootstrap documentation</a>
+            </p>
+
+            <hr class="my-7">
+
+            <h5></h5>
+
+            <div class="card">
+              <div class="card-body border">
+
+                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="position: static; right: auto; bottom: auto; opacity: 1;">
+                  <div class="toast-header">
+
+                    <!-- Title -->
+                    <strong class="mr-auto">Bootstrap</strong>
+
+                    <!-- Time -->
+                    <small>11 mins ago</small>
+
+                    <!-- Buttom -->
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+
+                  </div>
+                  <div class="toast-body">
+                    Hello, world! This is a toast message.
+                  </div>
+                </div>
+
+              </div>
+              <div class="card-footer font-size-sm bg-dark">
+                <code class="highlight html">
+                  &lt;div&nbsp;class=&quot;toast&quot;&nbsp;role=&quot;alert&quot;&nbsp;aria-live=&quot;assertive&quot;&nbsp;aria-atomic=&quot;true&quot;&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;toast-header&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Title&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;strong&nbsp;class=&quot;mr-auto&quot;&gt;Bootstrap&lt;/strong&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Time&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;small&gt;11&nbsp;mins&nbsp;ago&lt;/small&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Buttom&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;type=&quot;button&quot;&nbsp;class=&quot;ml-2&nbsp;mb-1&nbsp;close&quot;&nbsp;data-dismiss=&quot;toast&quot;&nbsp;aria-label=&quot;Close&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;toast-body&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;Hello,&nbsp;world!&nbsp;This&nbsp;is&nbsp;a&nbsp;toast&nbsp;message.<br />&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;<br />
+                </code>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    @@include("../partials/scripts.html")
+
+  </body>
+</html>

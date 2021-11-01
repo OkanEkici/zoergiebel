@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("../partials/head.html", {"pageTitle": "Shopper"})
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    @@include("../partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("../partials/navbar-docs-top.html", {"classList": "border-bottom"})
+
+    <!-- CONTENT -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+
+          <!-- Navbar -->
+          @@include("../partials/navbar-docs-left.html", {"title": "Changelog"})
+
+        </div>
+        <div class="col-12 col-md-8 col-lg-9 col-xl-10">
+          <section class="px-md-10 py-10">
+
+            <h3 class="mb-6">Changelog</h3>
+
+            <p class="text-gray-500">
+              <strong class="text-body">v1.0.3</strong> - December 31st, 2019
+            </p>
+
+            <ul class="text-gray-500">
+              <li>Updated email address in the documentation.</li>
+            </ul>
+
+            <p class="text-gray-500">
+              <strong class="text-body">v1.0.2</strong> - December 24th, 2019
+            </p>
+
+            <ul class="text-gray-500">
+              <li>Added <code>shop-topbar.html, shop-collapse.html, shop-simple.html, shop-masonry.html.</code></li>
+              <li>Added <code>product-image-grid.html, product-image-slider.html, product-images-stacked.html.</code></li>
+              <li>Changed positioning of navbar dropdowns.</li>
+              <li>Updated color checkbox.</li>
+              <li>Updated Figma files.</li>
+              <li>Updated dependencies.</li>
+              <li>Fixed small bugs.</li>
+            </ul>
+
+            <p class="text-gray-500">
+              <strong class="text-body">v1.0.1</strong> - December 11th, 2019
+            </p>
+
+            <ul class="text-gray-500">
+              <li>Added <code>overview.html.</code></li>
+              <li>Improved navbar dropdowns implementation.</li>
+              <li>Updated to Bootstrap v4.4.1.</li>
+              <li>Updated other dependencies.</li>
+            </ul>
+
+            <p class="text-gray-500">
+              <strong class="text-body">v1.0.0</strong> - November 28th, 2019
+            </p>
+
+            <ul class="text-gray-500">
+              <li>Initial release.</li>
+            </ul>
+
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    @@include("../partials/scripts.html")
+
+  </body>
+</html>
