@@ -1,0 +1,79 @@
+<div class="navbar navbar-fashion navbar-expand-lg navbar-dark @@classList">
+  <div class="container">
+
+    <!-- Search-->
+    <form class="navbar-form mr-auto order-lg-1">
+      <div class="input-group">
+        <input type="search" class="form-control" placeholder="Search for items and brands" />
+        <div class="input-group-append">
+          <button class="btn btn-dark">
+            <i class="fe fe-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarFashionBottomCollapse" aria-controls="navbarFashionBottomCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapse -->
+    <div class="collapse navbar-collapse" id="navbarFashionBottomCollapse">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+
+          <!-- Toggle -->
+          <a class="nav-link" data-toggle="dropdown" href="#">Home</a>
+
+          <!-- Menu -->
+          @@include("dropdown-home.html")
+
+        </li>
+        <li class="nav-item dropdown">
+
+          <!-- Toggle -->
+          <a class="nav-link" data-toggle="dropdown" href="#">Catalog</a>
+
+          <!-- Menu -->
+          @@include("dropdown-catalog-fashion.html")
+
+        </li>
+        <li class="nav-item dropdown">
+
+          <!-- Toggle -->
+          <a class="nav-link" data-toggle="dropdown" href="#">Shop</a>
+
+          <!-- Menu -->
+          @@include("dropdown-shop.html")
+
+        </li>
+        <li class="nav-item dropdown">
+
+          <!-- Toggle -->
+          <a class="nav-link" data-toggle="dropdown" href="#">Pages</a>
+
+          <!-- Menu -->
+          @@include("dropdown-pages.html")
+
+        </li>
+        <li class="nav-item dropdown">
+
+          <!-- Toggle -->
+          <a class="nav-link" data-toggle="dropdown" href="#">Blog</a>
+
+          <!-- Menu -->
+          @@include("dropdown-blog.html")
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="docs/getting-started.html">Docs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="#!">Sale %</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
