@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {"pageTitle": "Shopper"})
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    @@include("partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("partials/navbar-coming-soon.html")
+
+    <!-- CONTENT -->
+    <section class="bg-cover" style="margin-top: -90px; background-image: url(assets/img/covers/cover-22.jpg);">
+      <div class="container d-flex flex-column">
+        <div class="row align-items-center justify-content-center min-vh-100 pt-13 pb-12">
+          <div class="col-12 col-md-10 col-lg-8 col-xl-6 text-center text-white">
+
+            <!-- Heading -->
+            <h1>We are Coming Soon</h1>
+
+            <!-- Text -->
+            <p class="mb-9 font-size-lg">
+              Our team have been working on somesing amazing.
+            </p>
+
+            <!-- Counter -->
+            <div class="d-flex justify-content-center mb-10" data-countdown data-date="Jan 5, 2021 15:37:25">
+              <div class="text-center">
+                <div class="font-size-h1 font-weight-bolder" data-days>00</div>
+                <div class="heading-xxs">Days</div>
+              </div>
+              <div class="px-1 px-md-4">
+                <div class="font-size-h2 font-weight-bolder">:</div>
+              </div>
+              <div class="text-center">
+                <div class="font-size-h1 font-weight-bolder" data-hours>00</div>
+                <div class="heading-xxs">Hours</div>
+              </div>
+              <div class="px-1 px-md-4">
+                <div class="font-size-h2 font-weight-bolder">:</div>
+              </div>
+              <div class="text-center">
+                <div class="font-size-h1 font-weight-bolder" data-minutes>00</div>
+                <div class="heading-xxs">Minutes</div>
+              </div>
+              <div class="px-1 px-md-4">
+                <div class="font-size-h2 font-weight-bolder">:</div>
+              </div>
+              <div class="text-center">
+                <div class="font-size-h1 font-weight-bolder" data-seconds>00</div>
+                <div class="heading-xxs">Seconds</div>
+              </div>
+            </div>
+
+            <!-- Form -->
+            <form>
+              <div class="form-row">
+                <div class="col-12 col-md">
+
+                  <!-- Input -->
+                  <div class="form-group mb-md-0">
+                    <label class="sr-only" for="comingSoonEmail"></label>
+                    <input class="form-control form-control-dark" id="comingSoonEmail" type="email" placeholder="Enter Email *">
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-auto">
+
+                  <!-- Button -->
+                  <button class="btn btn-dark" type="submit">
+                    Notify me!
+                  </button>
+
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>
